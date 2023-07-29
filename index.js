@@ -43,6 +43,17 @@ if (require.main === module) {
 
   console.log("Expecting: false");
   console.log("=>", isPalindrome("robot"));
+
+  
+  console.log("");
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("eye"));
+
+  console.log("");
+
+  console.log("Expecting: true");
+  console.log("=>", isPalindrome("madam"));
 }
 
 module.exports = isPalindrome;
