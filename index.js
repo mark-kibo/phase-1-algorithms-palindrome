@@ -3,7 +3,7 @@ function isPalindrome(word) {
   let smallstr, reversedWords;
   let regex=/[\W_]/g
 
-  smallstr=word.replace(regex, "")
+  smallstr=word.toLowerCase().replace(regex, "")
   reversedWords=smallstr.split("").reverse().join("")
 
   if(reversedWords === smallstr) return true
@@ -17,7 +17,7 @@ function isPalindrome(word) {
   initialize variable smallstr to store string(has been removed non alpha numeric characters)
   initialize variable reversed_words to store our reversed word
  initialize and declare regex pattern variable
- perform a regex search on passed word argument to remove non-alphanumeric characters
+ perform a regex search on passed word argument to remove non-alphanumeric characters and turn it into lowercase
  store the result in the smallstr varable
  reverse our smallstr and store the result in the reversed_words variable
  compare smallstr and reversed_words, if they are equal return true for palindrome, otherwise return false
